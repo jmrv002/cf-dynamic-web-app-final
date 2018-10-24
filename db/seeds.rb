@@ -6,8 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# p1 = Product.create(name: "text", description: "description", image: "img.com", price: 200.00, rating:3)
+p1 = Product.create(name: "text", description: "description", image: "img.com", price: 200.00, rating:3)
 
-# c1 = Category.create(name: 'tech')
+c1 = Category.create(name: 'tech')
+c2 = Category.create(name: 'cooking')
 
-# p1.categories << c1
+p1.categories << [c1, c2]
