@@ -18,6 +18,13 @@ ActiveRecord::Schema.define(version: 2018_10_24_022119) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "categories_products", id: false, force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "category_id"
+    t.index ["category_id"], name: "index_categories_products_on_category_id"
+    t.index ["product_id"], name: "index_categories_products_on_product_id"
+  end
+
   create_table "comments", force: :cascade do |t|
     t.integer "product_id"
     t.text "text"
@@ -34,13 +41,6 @@ ActiveRecord::Schema.define(version: 2018_10_24_022119) do
     t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "products_categories", id: false, force: :cascade do |t|
-    t.integer "product_id"
-    t.integer "category_id"
-    t.index ["category_id"], name: "index_products_categories_on_category_id"
-    t.index ["product_id"], name: "index_products_categories_on_product_id"
   end
 
 end

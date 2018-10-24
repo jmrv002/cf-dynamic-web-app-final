@@ -6,7 +6,7 @@ class CreateCategories < ActiveRecord::Migration[5.2]
       t.timestamps
     end
 
-    create_table :products_categories, id: false do |t|
+    create_table :categories_products, id: false do |t|
       t.belongs_to :product, index: true
       t.belongs_to :category, index: true
     end
