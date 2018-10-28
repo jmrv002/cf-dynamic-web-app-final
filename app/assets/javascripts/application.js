@@ -12,10 +12,11 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require_tree .
 
 
 $(document).ready(function(){
 	$('.sidenav').sidenav();
+	$('select').formSelect();
 });
+
