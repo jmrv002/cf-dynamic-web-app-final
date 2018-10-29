@@ -2,6 +2,8 @@
   <%= render @products %>
 </div>
 
-<br>
-
-<%= link_to 'New Product', new_product_path %>
+<div class="fixed-action-btn">
+  <%= link_to new_product_path, :class => "btn-floating btn-large red" do %>
+    <i class="large material-icons">add</i>
+  <% end %>
+</div>

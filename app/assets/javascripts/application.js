@@ -19,5 +19,6 @@ $(document).ready(function(){
 	$('.sidenav').sidenav();
 	$('select').formSelect();
 	$('.materialboxed').materialbox();
+	$('.fixed-action-btn').floatingActionButton();
 });
 

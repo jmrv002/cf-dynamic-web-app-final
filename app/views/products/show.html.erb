@@ -18,3 +18,20 @@
     <p><%= @product.description %></p>
   </div>
 </div>
+
+<div class="fixed-action-btn">
+  <%= link_to edit_product_path(@product), :class => "btn-floating btn-large red" do %>
+    <i class="large material-icons">mode_edit</i>
+  <% end %>
+  <ul>
+    <li>
+      <%= link_to @product, :method => :delete, :class => "btn-floating yellow" do %>
+        <i class="material-icons">clear</i>
+      <% end %>
+    </li>
+  </ul>
+</div>
+
+<%= render template: "comments/index" %>
+
+
