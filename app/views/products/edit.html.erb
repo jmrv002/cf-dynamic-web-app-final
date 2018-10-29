@@ -2,5 +2,8 @@
 
 <%= render 'form', product: @product %>
 
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+<div class="fixed-action-btn">
+  <%= link_to @product, :method => :delete, :class => "btn-floating red tooltipped", :data => { :position => 'left', :tooltip => 'Delete Product' } do %>
+    <i class="material-icons">clear</i>
+  <% end %>
+</div>
