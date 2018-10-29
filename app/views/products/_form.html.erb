@@ -25,32 +25,26 @@
           </div>
         </div>
         
-        <div class = "row">
-           <div class = "input-field col s12">
-              <%= form.text_field :image, class: 'validate' %>
-              <%= get_label_for_product_form(product, :image, 'Image URL') %>
-           </div>
+         <div class = "input-field col s12">
+            <%= form.text_field :image, class: 'validate' %>
+            <%= get_label_for_product_form(product, :image, 'Image URL') %>
+         </div>
+
+        <div class="input-field col s12">
+          <%= form.text_area :description, class: 'materialize-textarea' %>
+          <%= get_label_for_product_form(product, :description) %>
         </div>
 
-        <div class="row">
-          <div class="input-field col s12">
-            <%= form.text_area :description, class: 'materialize-textarea' %>
-            <%= get_label_for_product_form(product, :description) %>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s12">
-            <select name="product[category_ids][]" multiple>
-              <% @categories.each do |category| %>
-                <%= get_category_option_for_product_form(product, category) %>
-              <% end %>
-            </select>
-            <label>Categories</label>
-          </div>
+        <div class="input-field col s12">
+          <select name="product[category_ids][]" multiple>
+            <% @categories.each do |category| %>
+              <%= get_category_option_for_product_form(product, category) %>
+            <% end %>
+          </select>
+          <label>Categories</label>
         </div>
         
-        <div class="row">
+        <div class="input-field col s12">
           <%= form.submit 'SUBMIT', :class => 'btn waves-effect waves-light' %>
         </div>        
      </form>       
