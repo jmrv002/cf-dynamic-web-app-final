@@ -2,5 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'products/filter', to: 'products#filter'
 
+  post 'comments', to: 'comments#create'
+
   resources :products
 end

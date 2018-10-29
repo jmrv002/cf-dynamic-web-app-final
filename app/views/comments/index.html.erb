@@ -1,0 +1,25 @@
+<h2>Comments</h2>
+<div class = "row">
+  <%= form_with(model: @comment, local: true) do |form| %>
+    <%= form.hidden_field :product_id, :value => @product.id %>
+
+    <div class="input-field col s12">
+      <%= form.text_area :text, class: 'materialize-textarea' %>
+      <%= form.label :text, 'New Comment' %>
+    </div>
+
+    <div class="input-field col s12">
+      <%= form.submit 'submit', class: 'btn btn-lg' %>
+    </div>
+  <% end %>
+</div>
+
+<ul class="collection">
+  <% unless @product.comments.empty? %>
+    <% @product.comments.each do |comment| %>
+      <li class="collection-item"><%= comment.text %></li>
+    <% end %>
+  <% else %>
+    <li class="collection-item">No comments</li>
+  <% end %>
+</ul>
