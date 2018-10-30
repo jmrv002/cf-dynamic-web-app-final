@@ -2,7 +2,7 @@
   <%= link_to product do %>
     <div class="card hoverable">
       <div class="card-image">
-        <img src="https://materializecss.com/images/sample-1.jpg">
+        <img src="<%= product.image %>">
         <span class="card-title"><%= product.name %></span>
         <a href="<%= edit_product_path(product) %>" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">edit</i></a>
       </div>
