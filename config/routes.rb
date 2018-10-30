@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   
   post 'comments', to: 'comments#create'
 
+  get 'login', to: 'auth#login'
+
   resources :products
 end
