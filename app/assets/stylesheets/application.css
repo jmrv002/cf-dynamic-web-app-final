@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+h1,
+h3{
+	text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card .card-image .card-title {
+	color: #535860;
+}
+
+nav {
+	padding: 0 70px;
+}
