@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 2018_10_24_022119) do
     t.text "description"
     t.string "image"
     t.decimal "price"
-    t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
