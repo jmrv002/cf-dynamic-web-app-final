@@ -3,8 +3,8 @@
     <%= form.hidden_field :product_id, :value => @product.id %>
 
     <div class="input-field col s12">
-      <%= form.text_area :text, class: 'materialize-textarea' %>
-      <%= form.label :text, 'New Comment' %>
+      <%= form.text_area :text, :required => true, class: 'materialize-textarea' %>
+      <%= form.label :text, 'New Comment'%>
     </div>
 
     <div class="input-field col s12">

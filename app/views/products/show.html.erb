@@ -16,12 +16,12 @@
 </div>
 
 <div class="fixed-action-btn">
-  <%= link_to edit_product_path(@product), :class => "btn-floating btn-large red" do %>
+  <%= link_to edit_product_path(@product), :class => "btn-floating btn-large" do %>
     <i class="large material-icons">mode_edit</i>
   <% end %>
   <ul>
     <li>
-      <%= link_to @product, :method => :delete, :class => "btn-floating yellow" do %>
+      <%= link_to @product, :method => :delete, :class => "btn-floating red" do %>
         <i class="material-icons">clear</i>
       <% end %>
     </li>

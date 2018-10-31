@@ -14,6 +14,10 @@
  *= require_self
  */
 
+body{
+	color: #212121;
+}
+
 h1,
 h3{
 	text-align: center;
@@ -30,4 +34,5 @@ h3{
 
 nav {
 	padding: 0 70px;
+	background-color: #9C27B0;
 }
