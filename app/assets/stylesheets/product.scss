@@ -3,89 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // 
 
-$primary-color: #E040FB;
-
 .product img{
 	width: 65%;
 }
 
-.fixed-action-btn a,
-.card-image a{
-	background-color: $primary-color !important;
-}
-
-.btn{
-	
-	background-color: #512DA8 !important;
-}
-
-input[type="submit"]{
-	color: white !important;
-}
-
-.input-field input:focus + label {
-color: $primary-color !important;
-}
-
-.row .input-field input:focus {
-border-bottom: 1px solid $primary-color !important;
-box-shadow: 0 1px 0 0 $primary-color !important
-}
-
-.input-field .prefix.active{
-	color: $primary-color !important;
-}
-
-textarea:focus {
-  border-bottom: 1px solid $primary-color !important;
-  -webkit-box-shadow: 0 1px 0 0 $primary-color !important;
-  -moz-box-shadow: 0 1px 0 0 $primary-color !important;
-  box-shadow: 0 1px 0 0 $primary-color !important;
-}
-
-.input-field textarea[class=materialize-textarea]:focus {
-border-bottom: 1px solid #2196f3;
-box-shadow: 0 1px 0 0 #2196f3;
-}
-
-[type="checkbox"]:checked+span:not(.lever):before {
-	border-right: 2px solid $primary-color !important;
-    border-bottom: 2px solid $primary-color !important;
-}
-
-textarea.valid[type="checkbox"]:checked+span:not(.lever):not(.browser-default)
-input.valid:not([type]), input.valid:not([type]):focus, 
-input.valid[type=text]:not(.browser-default), 
-input.valid[type=text]:not(.browser-default):focus, 
-input.valid[type=password]:not(.browser-default), 
-input.valid[type=password]:not(.browser-default):focus, 
-input.valid[type=email]:not(.browser-default), 
-input.valid[type=email]:not(.browser-default):focus, 
-input.valid[type=url]:not(.browser-default), 
-input.valid[type=url]:not(.browser-default):focus, 
-input.valid[type=time]:not(.browser-default), 
-input.valid[type=time]:not(.browser-default):focus, 
-input.valid[type=date]:not(.browser-default), 
-input.valid[type=date]:not(.browser-default):focus, 
-input.valid[type=datetime]:not(.browser-default), 
-input.valid[type=datetime]:not(.browser-default):focus, 
-input.valid[type=datetime-local]:not(.browser-default), 
-input.valid[type=datetime-local]:not(.browser-default):focus, 
-input.valid[type=tel]:not(.browser-default), 
-input.valid[type=tel]:not(.browser-default):focus, 
-input.valid[type=number]:not(.browser-default), 
-input.valid[type=number]:not(.browser-default):focus, 
-input.valid[type=search]:not(.browser-default), 
-input.valid[type=search]:not(.browser-default):focus, 
-textarea.materialize-textarea.valid, 
-textarea.materialize-textarea.valid:focus, 
-.select-wrapper.valid>input.select-dropdown{
-	 border-bottom: 1px solid $primary-color !important;
-    -webkit-box-shadow: 0 1px 0 0 $primary-color !important;
-    box-shadow: 0 1px 0 0 $primary-color !important;
+@media (max-width: 600px) { 
+  .product img{
+	width: 100%;
+  }
 }
 
 
-a.red{
-	background-color: red !important;
-}

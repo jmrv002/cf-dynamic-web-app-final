@@ -15,6 +15,18 @@
  */
 
 body{
+	color: #757575;
+	font-family: 'News Cycle', sans-serif;
+}
+
+.brand-logo{
+	font-family: 'Rajdhani', sans-serif;
+}
+
+h1,
+h2,
+h3,
+b{
 	color: #212121;
 }
 
@@ -28,11 +40,12 @@ h3{
   flex-wrap: wrap;
 }
 
-.card .card-image .card-title {
-	color: #535860;
-}
-
 nav {
 	padding: 0 70px;
-	background-color: #9C27B0;
+}
+
+@media (max-width: 600px) { 
+  nav{
+    padding: 0 10px;
+  }
 }

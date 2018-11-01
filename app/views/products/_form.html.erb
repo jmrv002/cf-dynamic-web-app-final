@@ -15,18 +15,18 @@
      <form class = "col s12">
         <div class = "row">
           <div class="input-field col s6">
-            <%= form.text_field :name, class: 'validate' %>
+            <%= form.text_field :name %>
             <%= get_label_for_product_form(product, :name) %>
           </div>
            
           <div class="input-field col s6">
-            <%= form.text_field :price, class: 'validate' %>
+            <%= form.text_field :price %>
             <%= get_label_for_product_form(product, :price) %>
           </div>
         </div>
         
          <div class = "input-field col s12">
-            <%= form.text_field :image, class: 'validate' %>
+            <%= form.text_field :image %>
             <%= get_label_for_product_form(product, :image, 'Image URL') %>
          </div>
 
@@ -45,7 +45,7 @@
         </div>
         
         <div class="input-field col s12">
-          <%= form.submit 'SUBMIT', :class => 'btn waves-effect waves-light' %>
+          <button class="btn waves-effect waves-light purple darken-1" type="submit" name="action">Submit</button>
         </div>        
      </form>       
   </div>

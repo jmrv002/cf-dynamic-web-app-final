@@ -6,7 +6,7 @@
   <div class="col m6 s12">
     <p><b>Name: </b><%= @product.name %></p>
     <p><b>Price: </b><%= @product.price %></p>
-    <span><b>Categories:</b></span>
+    <span><b>Categories:  </b></span>
     <% @product.categories.each do |category| %>
       <div class="chip"> <%= category.name %> </div>
     <% end %>

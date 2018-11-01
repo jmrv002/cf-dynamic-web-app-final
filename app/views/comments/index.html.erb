@@ -8,12 +8,13 @@
     </div>
 
     <div class="input-field col s12">
-      <%= form.submit 'submit', class: 'btn btn-lg' %>
+      <button class="btn waves-effect waves-light purple darken-1" type="submit" name="action">Submit</button>
     </div>
   <% end %>
 </div>
 
 <ul class="collection">
+  <li class="collection-item center-align"><b>List of comments</b></li>
   <% unless @product.comments.empty? %>
     <% @product.comments.each do |comment| %>
       <li class="collection-item"><%= comment.text %></li>
