@@ -10,6 +10,7 @@
     <% @product.categories.each do |category| %>
       <div class="chip"> <%= category.name %> </div>
     <% end %>
+    <p><b>Color: </b> <div class="color-displayer" style="background-color: <%= @product.colour %>"></div></p>
     <p><b>Description:</b></p>
     <p><%= @product.description %></p>
   </div>
