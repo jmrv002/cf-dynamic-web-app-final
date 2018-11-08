@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'products#index'
+  root 'simple_pages#landing_page'
   
   post 'comments', to: 'comments#create'
 
