@@ -14,8 +14,8 @@ p3 = Product.create(name: "Camara Lumix", description: productDescription, image
 p4 = Product.create(name: "PS4", description: productDescription, image_url: "https://i.ebayimg.com/thumbs/images/g/YdIAAOSw-cFbkqtZ/s-l225.webp",colour: 'white' ,price: 250.00)
 p5 = Product.create(name: "Mac Book", description: productDescription, image_url: "https://i.ebayimg.com/thumbs/images/g/cEUAAOSwE1Bbkqt1/s-l225.webp",colour: 'white' ,price: 500.00)
 
-
-
+o1 = Order.create(user_id: 1, product_id: p1.1, total: 10.0)
+o2 = Order.create(user_id: 1, product_id: p2.2, total: 5.0)
 
 c1 = Category.create(name: 'tech')
 c2 = Category.create(name: 'computers')

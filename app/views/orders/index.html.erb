@@ -1,0 +1,17 @@
+<section id="orders-container">
+  <div class="row">
+    <% @orders.each do |order| %>
+      <div class="col-sm">
+        <%= link_to order do %>
+          <div class="card hoverable">
+            <div class="card-content">
+              <span class="card-title">Order # <%= order.id %>: <%= order.product.name %></span>
+              <p><b>Price: $ <%= order.product.price %></b></p>
+              <p><%= order.product.description %></p>
+            </div>
+          </div>
+        <% end %>
+      </div><!-- /col -->
+    <% end %>
+  </div>
+</section>

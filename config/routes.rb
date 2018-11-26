@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get 'login', to: 'auth#login'
 
   resources :products
+
+  resources :orders, only: [:index, :show, :create, :destroy]
 end

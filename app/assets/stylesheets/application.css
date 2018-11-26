@@ -49,3 +49,7 @@ nav {
     padding: 0 10px;
   }
 }
+
+#orders-container a{
+  color: black;
+}
