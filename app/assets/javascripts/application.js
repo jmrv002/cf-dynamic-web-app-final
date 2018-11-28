@@ -21,5 +21,6 @@ $(document).ready(function(){
 	$('.tooltipped').tooltip();
 	$('.materialboxed').materialbox();
 	$('.fixed-action-btn').floatingActionButton();
+  $('.carousel').carousel();
 });
 

@@ -12,7 +12,13 @@
             <button class="btn waves-effect waves-light purple darken-1" type="submit" name="action">Go to our products</button>
           <% end %>
 
-          <img class="responsive-img" src="https://cdn-images-1.medium.com/max/1600/1*MrWVkaCVte77OIv4THt8Hw.gif">
+          <div class="carousel">
+            <% @products.each do |product| %>
+              <a class="carousel-item" href="#one!">
+                <img src="<%= product.image_url %>">
+              </a>
+            <% end %>
+          </div>
         </div>
       </span>
     </main>
