@@ -2,14 +2,41 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.landing-container{
+  height: 100%;
+  width: 100%;
+  background-color: #d500f9;
+  position: absolute;
+  text-align: center;
+  padding-top: 80px;
+  color: white
+}
+
 h1.title{
   font-family: 'Architects Daughter', cursive;
   text-transform: uppercase;
   font-weight: 900;
-  text-align: left !important;
-  color: #9C27B0 !important;
+  color: white !important;
 }
 
 .welcome {
   margin-top: 3%;
 }
+
+button:hover{
+  background-color: #d4d4d4;
+}
+
+#carouselExampleIndicators{
+  margin: 60px 30%; 
+
+  .carousel-inner{
+    text-align: center;
+  }
+
+  .carousel-caption{
+    color: #d500f9;
+  }
+
+}
+

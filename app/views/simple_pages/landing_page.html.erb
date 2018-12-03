@@ -1,25 +1,31 @@
-<div class="welcome">
-  <main class="valign-wrapper">
-      <span class="container ">
+<div class="center-align" style="width: 100%">
+  <p class="flow-text">Welcome!</p>
+  <h1 class="title">Buy everithing</h1>
 
-        <p class="flow-text">Welcome!</p>
-        <h1 class="title">Buy everithing</h1>
+  <blockquote class="flow-text">You will get whatever you want here.</blockquote>
 
-        <blockquote class="flow-text">You will get whatever you want here.</blockquote>
+  <%= link_to products_path do %>
+    <button class="btn waves-effect waves-light purple darken-1" type="submit" name="action">Go to our products</button>
+  <% end %>
+</div>
 
-        <div class="center-align">
-          <%= link_to products_path do %>
-            <button class="btn waves-effect waves-light purple darken-1" type="submit" name="action">Go to our products</button>
-          <% end %>
 
-          <div class="carousel">
-            <% @products.each do |product| %>
-              <a class="carousel-item" href="#one!">
-                <img src="<%= product.image_url %>">
-              </a>
-            <% end %>
-          </div>
-        </div>
-      </span>
-    </main>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <% @products.each_with_index do |product, i| %>
+      <li data-target="#carouselExampleIndicators" data-slide-to="<%= i %>" <%= 'class=active' if product == @products.first %>></li>
+    <% end %>
+  </ol>
+  <div class="carousel-inner">
+    <%= render partial: "product", collection: @products %>
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>

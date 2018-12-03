@@ -16,11 +16,15 @@
 
 
 $(document).ready(function(){
-	$('.sidenav').sidenav();
-	$('select').formSelect();
-	$('.tooltipped').tooltip();
-	$('.materialboxed').materialbox();
-	$('.fixed-action-btn').floatingActionButton();
-  $('.carousel').carousel();
+  if(location.pathname != "/")
+  {
+    $('.sidenav').sidenav()
+    $('select').formSelect()
+    $('.tooltipped').tooltip()
+    $('.materialboxed').materialbox()
+    $('.fixed-action-btn').floatingActionButton()
+  }
+	
+   $('.carousel').carousel()
 });
 
